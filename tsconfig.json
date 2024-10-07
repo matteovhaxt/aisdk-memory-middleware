@@ -10,9 +10,9 @@
 
     // Bundler mode
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "noEmit": true,
+    "noEmit": false,
+    "declaration": true,
+    "outDir": "./dist",
 
     // Best practices
     "strict": true,
@@ -29,5 +29,7 @@
     "paths": {
       "@/*": ["src/*"]
     }
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

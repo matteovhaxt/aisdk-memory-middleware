@@ -1,6 +1,16 @@
 {
   "name": "aisdk-memory-middleware",
-  "module": "index.ts",
+  "version": "0.0.1",
+  "description": "A plug-in memory middleware for Vercel ai sdk",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir=dist --target=node"
+  },
+  "author": "Matteo von Haxthausen",
+  "license": "ISC",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
